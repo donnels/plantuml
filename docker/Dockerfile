@@ -11,7 +11,7 @@ FROM debian:testing-slim
                 wget \
             && rm -rf /var/lib/apt/lists/*
         RUN mkdir -p /root/.local/share /.local/share
-        ENV jarURL=https://github.com/plantuml/plantuml/releases/download/v1.2022.5/plantuml-1.2022.5.jar
+        ENV jarURL=https://github.com/plantuml/plantuml/releases/download/v1.2023.12/plantuml-1.2023.12.jar
         RUN wget $jarURL
         COPY . .
     # The entrypoint
